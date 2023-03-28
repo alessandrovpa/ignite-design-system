@@ -1,0 +1,21 @@
+import { Meta, Typeset } from '@storybook/addon-docs/blocks';
+import { fontSizes, fontWeights, fonts } from '@ignite-ui/tokens';
+
+<Meta title="Tokens/Typography" />
+
+
+export const SampleText = 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.';
+const fontSizesNumber = Object.entries(fontSizes).map(([key, value]) => value);
+
+# Typography
+
+**Font:** Roboto
+
+**Weights:** 400(regular), 500(medium), 700(bold)
+
+<Typeset
+  fontSizes={fontSizesNumber}
+  fontWeight={fontWeights.medium}
+  sampleText={SampleText}
+  fontFamily={fonts.default}
+/>
